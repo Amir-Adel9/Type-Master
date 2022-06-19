@@ -1,0 +1,152 @@
+* {
+    --main-color: #d0196e;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    color: azure;
+}
+
+.game {
+    background-color: #111;
+    min-height: 100vh;
+}
+
+.container {
+    margin: auto;
+    max-width: 900px;
+}
+
+.name {
+    font-family: 'Spline Sans Mono', monospace;
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.message {
+    background-color: #222;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.message span {
+    font-weight: bold;
+    color: var(--main-color);    
+}
+
+.message select {
+    background-color: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.message span::before {
+    content: "[ ";
+}
+
+.message span::after {
+    content: " ]";
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.start {
+    background-color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.start:hover {
+    font-size: 23px;
+    filter: invert();
+    border-color: transparent;
+}
+
+.the-word {
+    font-family: 'Spline Sans Mono', monospace;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    color: #2fe691;
+    user-select: none;
+}
+
+.input {
+    margin: 15px 0;
+    width: 100%;
+    display: block;
+    padding: 15px;  
+    border: 2px solid var(--main-color);
+    border-radius: 6px;
+    caret-color: var(--main-color);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.upcoming-words {
+    background-color: #222;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.upcoming-words div {
+    background-color: var(--main-color);
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+    user-select: none;
+}
+
+.control {
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.control span {
+    font-weight: bold;
+    color: var(--main-color);  
+}
+
+.finish { 
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+}
+
+.finish .pass {
+    color: #2fe691; 
+}
+
+.finish .fail {
+    color: yellow; 
+}
